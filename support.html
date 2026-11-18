@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>ささやき通訳 サポート</title>
+</head>
+<body>
+  <p class="back"><a href="./">← ささやき通訳</a></p>
+  <h1>ささやき通訳 サポート</h1>
+  <p class="meta">使い方とよくある質問です。解決しないときは、いちばん下のメールアドレスへご連絡ください。</p>
+
+  <h2>はじめに</h2>
+  <ol>
+    <li><a href="https://console.anthropic.com">console.anthropic.com</a> でアカウントを作り、Billing でクレジットを入れてから、API Keys で <code>sk-ant-</code> で始まるキーを作ります。</li>
+    <li>アプリの設定（右上の歯車）で、Anthropic のキーを貼り付けて「保存」します。</li>
+    <li>OpenAI のキーは任意です。なくても、iPhone 内蔵の文字起こしと読み上げで動きます。</li>
+  </ol>
+
+  <h2>使い方</h2>
+  <ol>
+    <li>イヤホンをつなぎ、画面上部で訳す向き（例: 英語 → 日本語）を選びます。</li>
+    <li>「翻訳開始」をタップします。初回だけ、音声認識の言語モデルをダウンロードします。</li>
+    <li>話し声を聞き取ると、文が区切れるたびに訳をイヤホンへ読み上げます。画面には原文と訳文が残ります。</li>
+  </ol>
+
+  <h2>よくある質問</h2>
+  <h3>訳の読み上げが話に追いつかない</h3>
+  <p>設定の「読み上げが遅れたとき」で「いつも要点だけ短く訳す」をオンにしてください。「読み上げ速度」を 1.4〜1.6 倍に上げるのも効果があります。遅れが大きいときは、自動で速く読み、要点だけの訳にし、それでも遅れたら今の話まで飛ばします。</p>
+  <h3>相手の声をうまく聞き取らない</h3>
+  <p>設定の「マイク」を「iPhone マイク」にして、iPhone を相手に向けてください。AirPods などのイヤホンのマイクは、着けている人の声を拾うように作られています。</p>
+  <h3>騒がしい場所で、雑音を話し声と間違える</h3>
+  <p>設定の「発話の区切り」で、「ノイズゲート」と「声とみなす差」を上げてください。</p>
+  <h3>読み上げの声が機械っぽい</h3>
+  <p>iPhone の設定 &gt; アクセシビリティ &gt; 読み上げコンテンツ &gt; 声 から、「拡張」や「プレミアム」の声をダウンロードしてください。アプリはいちばん品質の高い声を自動で使います。</p>
+  <h3>「クレジットが残っていません」と出る</h3>
+  <p>その会社の API の残高がありません。Anthropic は console.anthropic.com、OpenAI は platform.openai.com の Billing でクレジットを購入してください。OpenAI が使えないときは、自動で iPhone 内蔵の文字起こし・読み上げに切り替わります。</p>
+  <h3>料金はかかりますか</h3>
+  <p>アプリ自体は無料です。翻訳に使う Anthropic（と、使う場合は OpenAI）の API 料金が、ご自身のアカウントにかかります。</p>
+  <h3>話した内容はどこへ送られますか</h3>
+  <p><a href="privacy.html">プライバシーポリシー</a>をご覧ください。提供者のサーバーはなく、送り先はあなたがキーを登録した会社だけです。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>メール: 9n9b25qtpq@privaterelay.appleid.com</p>
+  <p>お使いの iPhone の機種・iOS のバージョンと、うまくいかなかった場面を書いていただけると助かります。API キーや会話の内容は、メールに書かないでください。</p>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>ささやき通訳 プライバシーポリシー</title>
+</head>
+<body>
+  <p class="back"><a href="./">← ささやき通訳</a></p>
+  <h1>ささやき通訳 プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026年11月18日 ／ 提供者: ITSUKI ASANO</p>
+  <p>ささやき通訳（以下「本アプリ」）は、マイクで聞き取った会話をリアルタイムに翻訳し、イヤホンなどへ読み上げる iPhone 用アプリです。このポリシーは、本アプリがどの情報を扱い、どこへ送るかを説明します。</p>
+
+  <h2>1. 扱う情報</h2>
+  <ul>
+    <li>マイクの音声（翻訳を開始している間だけ）</li>
+    <li>音声を文字にした内容（原文）と、その訳文</li>
+    <li>あなたが入力した用語集と設定</li>
+    <li>あなたが登録した API キー（Anthropic、任意で OpenAI）</li>
+  </ul>
+
+  <h2>2. 端末の中で行う処理</h2>
+  <ul>
+    <li>マイク音声の取り込み、雑音の除去、話の区切りの判定は端末の中で行います。</li>
+    <li>文字起こし・読み上げに「iPhone 内蔵」を使うときは、Apple が iPhone に用意している音声認識と音声合成を端末の中で使います。音声は外部へ送りません（初回のみ、Apple から言語モデルをダウンロードします）。</li>
+  </ul>
+
+  <h2>3. 外部サービスへの送信</h2>
+  <p>本アプリは、翻訳などの機能のために、次の会社のサービスへ<strong>あなたの端末から直接</strong>、<strong>あなたが登録した API キー</strong>を使って情報を送ります。初めて使う前に、アプリ内でこの送信について同意をいただきます。</p>
+  <div class="card">
+    <h3>Anthropic（Claude API）— 翻訳</h3>
+    <ul>
+      <li>送る情報: 文字にした内容、直前の数往復の会話（原文と訳文）、用語集、言語の設定</li>
+      <li>目的: 文脈に合った翻訳文を作るため</li>
+      <li>取り扱い: <a href="https://www.anthropic.com/legal/privacy">Anthropic のプライバシーポリシー</a>と API の利用規約に従います</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>OpenAI — 文字起こし・読み上げ（使う設定のときだけ）</h3>
+    <ul>
+      <li>送る情報: 発話の音声、文字起こしの補助に使う用語集と直前の発話、読み上げる訳文</li>
+      <li>目的: 音声を文字にするため、訳文を音声にするため</li>
+      <li>OpenAI を使うのは、OpenAI の API キーを登録し、設定で OpenAI（または「自動」）を選んでいるときだけです</li>
+      <li>取り扱い: <a href="https://openai.com/policies/privacy-policy/">OpenAI のプライバシーポリシー</a>と API の利用規約に従います</li>
+    </ul>
+  </div>
+  <p>提供者はサーバーを持っておらず、あなたの音声・会話の内容・API キーを受け取ることはありません。</p>
+
+  <h2>4. 端末に保存する情報</h2>
+  <ul>
+    <li>設定と用語集: 端末内（アプリの設定領域）に保存します。</li>
+    <li>API キー: 端末の Keychain に保存し、iCloud キーチェーンやバックアップから別の端末へは移りません。</li>
+    <li>会話のログ（原文と訳文）: アプリを使っている間だけメモリに置き、保存しません。アプリを終了すると消えます。</li>
+  </ul>
+
+  <h2>5. 解析・広告・トラッキング</h2>
+  <p>本アプリは、利用状況の解析（アナリティクス）、広告、トラッキングを行いません。これらを目的とする第三者の SDK も含みません。</p>
+
+  <h2>6. 使う権限</h2>
+  <ul>
+    <li>マイク: 会話を聞き取って翻訳するために使います。</li>
+    <li>バックグラウンドでのオーディオ: 画面をロックしても翻訳と読み上げを続けるために使います。翻訳を止めると、マイクの使用も止まります。</li>
+  </ul>
+
+  <h2>7. 周りの人の声について</h2>
+  <p>マイクは、会話の相手や周りの人の声も拾い、上の外部サービスへ送られることがあります。会話の相手には翻訳アプリを使っていることを伝え、録音や会話の取り扱いに関する法令を守ってお使いください。</p>
+
+  <h2>8. 情報の削除</h2>
+  <ul>
+    <li>API キーは、アプリの設定画面から削除できます。</li>
+    <li>会話のログは、画面左上のゴミ箱で消せます。アプリを終了しても消えます。</li>
+    <li>アプリを削除すると、端末内の設定と API キーはすべて削除されます。</li>
+    <li>外部サービスへ送った情報の保存や削除は、各社のポリシーに従います。必要なときは各社へお問い合わせください。</li>
+  </ul>
+
+  <h2>9. お子様の利用</h2>
+  <p>本アプリは、13歳未満のお子様を対象としていません。</p>
+
+  <h2>10. 変更</h2>
+  <p>本ポリシーを変更するときは、このページを更新し、更新日を書き換えます。送信先や送る情報が変わるときは、アプリ内であらためて同意をいただきます。</p>
+
+  <h2>11. お問い合わせ</h2>
+  <p>本アプリについてのお問い合わせ: 9n9b25qtpq@privaterelay.appleid.com</p>
+
+  <hr>
+  <h2 lang="en">Privacy Policy (English summary)</h2>
+  <div lang="en">
+    <ul>
+      <li><strong>What the app handles:</strong> microphone audio while translation is running, the transcribed text and its translation, your glossary and settings, and the API keys you register.</li>
+      <li><strong>On-device processing:</strong> audio capture, noise reduction and speech segmentation run on the device. With the "on-device" option, Apple's on-device speech recognition and speech synthesis are used and audio does not leave the device.</li>
+      <li><strong>Third parties:</strong> using your own API keys, the app sends data directly from your device to (a) Anthropic (Claude API) — the transcribed text, the last few turns of the conversation and your glossary, to translate them; and (b) OpenAI, only if you register an OpenAI key and choose it — the speech audio for transcription and the translated text for speech synthesis. Each provider handles the data under its own privacy policy. The app asks for your consent before first use.</li>
+      <li><strong>No developer server:</strong> the developer runs no server and never receives your audio, conversations or keys. There is no analytics, advertising or tracking, and no third-party SDK.</li>
+      <li><strong>Storage:</strong> settings on the device; API keys in the device Keychain (this device only); the conversation log only in memory while the app runs.</li>
+      <li><strong>Bystanders:</strong> the microphone may pick up other people's voices. Please tell the people you talk with that you are using a translation app.</li>
+      <li><strong>Children:</strong> the app is not directed to children under 13.</li>
+      <li><strong>Contact:</strong> 9n9b25qtpq@privaterelay.appleid.com</li>
+    </ul>
+  </div>
+</body>
+</html>
