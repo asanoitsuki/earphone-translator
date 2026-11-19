@@ -11,7 +11,7 @@
 <body>
   <p class="back"><a href="./">← あなたのイヤホンが翻訳機に。</a></p>
   <h1>あなたのイヤホンが翻訳機に。 プライバシーポリシー</h1>
-  <p class="meta">最終更新日: 2026年11月18日（サブスクリプションの追加） ／ 提供者: ITSUKI ASANO</p>
+  <p class="meta">最終更新日: 2026年11月19日（プレミアムの自然な声の追加） ／ 提供者: ITSUKI ASANO</p>
   <p>あなたのイヤホンが翻訳機に。（以下「本アプリ」）は、マイクで聞き取った会話をリアルタイムに翻訳し、イヤホンなどへ読み上げる iPhone 用アプリです。このポリシーは、本アプリがどの情報を扱い、どこへ送るかを説明します。</p>
 
   <h2>1. 扱う情報</h2>
@@ -34,8 +34,8 @@
   <div class="card">
     <h3>提供者の中継サーバー — プレミアム（サブスクリプション）のとき</h3>
     <ul>
-      <li>送る情報: 下の「Anthropic」と同じ翻訳のための情報と、加入を確認するための購入データ</li>
-      <li>目的: 加入を確認し、提供者の API キーで Anthropic へ翻訳を依頼するため。利用量に上限を設けるため</li>
+      <li>送る情報: 下の「Anthropic」と同じ翻訳のための情報、自然な声で読み上げる訳文、加入を確認するための購入データ</li>
+      <li>目的: 加入を確認し、提供者の API キーで Anthropic へ翻訳を、Google へ読み上げを依頼するため。利用量に上限を設けるため</li>
       <li>中継サーバーは Supabase（Supabase Inc.）のサーバー上で動きます。<strong>会話の内容は保存しません。</strong>保存するのは、購入 ID ごとの月ごとの利用料と利用回数だけです（個人を特定する情報は含みません）。</li>
     </ul>
   </div>
@@ -49,6 +49,15 @@
     </ul>
   </div>
   <div class="card">
+    <h3>Google（Cloud Text-to-Speech）— プレミアムの自然な声</h3>
+    <ul>
+      <li>送る情報: 読み上げる訳文と、言語・声の種類・話す速さ（提供者の中継サーバーを通して送ります）</li>
+      <li>目的: 訳文を自然な声（AI による合成音声）にするため</li>
+      <li>Google を使うのは、プレミアムで「自然な声で読み上げる」がオン（初期設定）のときだけです。オフにすると iPhone 内蔵の声になり、Google には送りません</li>
+      <li>取り扱い: <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>と Google Cloud の利用規約に従います</li>
+    </ul>
+  </div>
+  <div class="card">
     <h3>OpenAI — 文字起こし・読み上げ（使う設定のときだけ）</h3>
     <ul>
       <li>送る情報: 発話の音声、文字起こしの補助に使う用語集と直前の発話、読み上げる訳文</li>
@@ -57,7 +66,7 @@
       <li>取り扱い: <a href="https://openai.com/policies/privacy-policy/">OpenAI のプライバシーポリシー</a>と API の利用規約に従います</li>
     </ul>
   </div>
-  <p>提供者が受け取るのは、プレミアムで中継サーバーを通る翻訳の依頼だけで、その内容は保存しません。音声と、あなたが登録した API キーを提供者が受け取ることはありません。</p>
+  <p>提供者が受け取るのは、プレミアムで中継サーバーを通る翻訳と読み上げの依頼だけで、その内容は保存しません。音声と、あなたが登録した API キーを提供者が受け取ることはありません。</p>
 
   <h2>4. 端末に保存する情報</h2>
   <ul>
@@ -103,6 +112,7 @@
       <li><strong>What the app handles:</strong> microphone audio while translation is running, the transcribed text and its translation, your glossary and settings, and the API keys you register.</li>
       <li><strong>On-device processing:</strong> audio capture, noise reduction and speech segmentation run on the device. With the "on-device" option, Apple's on-device speech recognition and speech synthesis are used and audio does not leave the device.</li>
       <li><strong>Third parties:</strong> using your own API keys, the app sends data directly from your device to (a) Anthropic (Claude API) — the transcribed text, the last few turns of the conversation and your glossary, to translate them; and (b) OpenAI, only if you register an OpenAI key and choose it — the speech audio for transcription and the translated text for speech synthesis. Each provider handles the data under its own privacy policy. The app asks for your consent before first use.</li>
+      <li><strong>Premium natural voice:</strong> with the subscription and the natural voice on (default), the translated text to be spoken is sent through the relay to Google Cloud Text-to-Speech to create an AI-generated voice. Turning it off uses the iPhone's built-in voice instead.</li>
       <li><strong>Premium relay:</strong> with the subscription, translation requests pass through the developer's relay server (hosted on Supabase) to Anthropic, together with the signed App Store purchase data used to confirm the subscription. The relay does not store conversation content; it stores only usage amounts per purchase ID per month for fair-use limits (deleted 13 months after last use). With your own API key, data goes directly from your device to the provider. There is no analytics, advertising or tracking, and no third-party SDK. Payments are handled by Apple.</li>
       <li><strong>Storage:</strong> settings on the device; API keys in the device Keychain (this device only); the conversation log only in memory while the app runs.</li>
       <li><strong>Bystanders:</strong> the microphone may pick up other people's voices. Please tell the people you talk with that you are using a translation app.</li>
